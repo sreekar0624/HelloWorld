@@ -7,20 +7,19 @@ pipeline {
 			}
 		}
 	}
-	stages {
-		stage("Build") {
+	
+		stage("Test") {
 			steps {
-				echo "Building the application"
+				echo "Testing the application"
 			}
 		}
-	}
-	stages {
-		stage("Build") {
+	
+		stage("Deploy") {
 			steps {
-				echo "Building the application"
+				echo "Deploying the application"
 			}
 		}
-	}
+	
 }
 	
 	
